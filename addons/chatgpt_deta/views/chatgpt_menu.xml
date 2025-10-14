@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- URL Action om ChatGPT te openen -->
+    <record id="action_open_chatgpt_deta" model="ir.actions.act_url">
+        <field name="name">ChatGPT DETA</field>
+        <field name="url">https://chatgpt.com/g/g-6855497c7dec8191a649f44699bca11e-kennisbank-deta?model=gpt-5-thinking</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Menu item -->
+    <menuitem
+        id="menu_chatgpt_deta"
+        name="ChatGPT DETA"
+        action="action_open_chatgpt_deta"
+        sequence="100"/>
+
+</odoo>

@@ -1,0 +1,11 @@
+.oa-root { padding: 0 !important; }
+.oa-wrap { position: relative; width: 100%; height: calc(100vh - var(--o-navbar-height)); display:flex; flex-direction: column; }
+.oa-chat-box { flex: 1; overflow: auto; padding: 16px; background: var(--o-gray-100, #f5f6f8); }
+.oa-input { display: flex; gap: 8px; padding: 12px; border-top: 1px solid rgba(0,0,0,0.06); background: #fff; }
+.oa-text { flex: 1; height: 40px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.15); padding: 0 12px; }
+.oa-send { height: 40px; border-radius: 10px; border: 0; padding: 0 14px; cursor: pointer; }
+.oa-msg { display: flex; margin: 6px 0; }
+.oa-msg.user { justify-content: flex-end; }
+.oa-msg.assistant { justify-content: flex-start; }
+.oa-bubble { max-width: 70%; padding: 10px 12px; border-radius: 12px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.05); white-space: pre-wrap; }
+.oa-msg.user .oa-bubble { background: #e7f0ff; }

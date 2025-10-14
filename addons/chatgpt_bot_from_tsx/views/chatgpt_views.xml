@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Action voor het launchen van ChatGPT browser -->
+    <record id="action_launch_chatgpt" model="ir.actions.server">
+        <field name="name">Launch ChatGPT Browser</field>
+        <field name="model_id" ref="model_chatgpt_launcher"/>
+        <field name="state">code</field>
+        <field name="code">
+action = model.launch_browser()
+        </field>
+    </record>
+
+    <!-- Menu item -->
+    <menuitem 
+        id="menu_chatgpt_root"
+        name="ChatGPT"
+        sequence="100"
+    />
+
+    <menuitem 
+        id="menu_chatgpt_launch"
+        name="Launch ChatGPT Browser"
+        parent="menu_chatgpt_root"
+        action="action_launch_chatgpt"
+        sequence="10"
+    />
+</odoo>
