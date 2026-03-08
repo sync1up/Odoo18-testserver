@@ -5,3 +5,7 @@ cryptocode==0.1
 pysmb==1.2.9.1
 websocket-client==1.6.3
 schedule==1.2.1
+# SECURITY FIX: upgraded from 0.5.1 - fixes CWE-770 Allocation of Resources Without Limits or Throttling (CVSS 8.7)
+pyasn1==0.6.2
+# SECURITY FIX: upgraded from 40.5.0 - fixes CWE-94 Improper Control of Generation of Code 'Code Injection' (CVSS 7.5)
+setuptools==65.5.1
